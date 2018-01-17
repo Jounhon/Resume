@@ -1,10 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+    <!--出現在搜尋結果及Facebook的標題-->
+    <title>程式作品集 ~★鍾泳鋐</title>
+    <meta property="og:title" content="程式作品集 ~★鍾泳鋐"/>
+    <!--出現在搜尋結果及Facebook的敘述-->
+    <meta name="description" content="學生時期的一些程式作品集">
+    <meta property="og:description" content="學生時期的一些程式作品集"/>
+    <!--出現在Facebook的連結-->
+    <meta property="og:url" content="https://jounhon.github.io/Resume/"/>
+    <!--出現在Facebook的圖片-->
+    <meta property="og:image" content=""/>
+
+    <!--CSS-->
+    <link rel="stylesheet" media="all" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="assets/css/loading.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="assets/css/nav.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="assets/plugin/icofont/css/icofont.css" />
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <!--Load Google Fonts-->
+    <script type="text/javascript">
+        WebFontConfig = {google: { families: [ 'Josefin+Sans::latin','Handlee::latin' ] }};
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <!--Loading-->
+    <script type="text/javascript">
+        $(window).on("load",function () {
+            setTimeout(function () {
+                $(".loadBox").delay(900).fadeOut(800);
+                $(".container, #slide-menu").fadeIn(800);
+            },900)
+        })
+    </script>
 </head>
 <body>
+    <!--Loading-->
+    <div class="loadBox">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
 
+    <!-- Navigation -->
+    <nav id="slide-menu">
+        <ul>
+            <li class="collection"><a href="#collection">作品集</a></li>
+            <li class="sep personal"><a href="#personal">個人檔案</a></li>
+            <li class="experience"><a href="#experience">工作經驗</a></li>
+        </ul>
+    </nav>
+
+    <!--Content-->
+    <div class="container" id="content" >
+        <div class="menu-trigger"></div>
+
+        <section id="collection">
+            <h2>作品集</h2>
+            <p>以下是學生時期的一些程式作品。</p>
+            <h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1>
+        </section>
+
+        <section id="personal">
+            <h2>個人檔案</h2>
+            <!-- 標題 - 個人資料 -->
+            <div class="profile_text">
+                <div class="profile_head">
+                    <img class="left" src="assets/img/profile/profile.png" alt="Neo" width="150" height="150" /> <!-- 大頭照片 -->
+                    <p class="right">
+                        <!-- 姓名 -->
+                        <strong>我叫 鍾泳鋐</strong>
+                        <!-- 職稱 -->
+                        <br>初入社會的新鮮人
+                        <!-- 生日 -->
+                        <br>1995 年 6月 26日
+                    </p>
+                </div>
+                <!-- 社群網站連結 - 個人資料 -->
+                <div class="profile_bottom">
+                    <p>
+                        <ul>
+                            <li>
+                                <!-- Github -->
+                                <a href="https://www.facebook.com/clayclaydik" target="_blank">
+                                    <img src="assets/img/profile/facebook.png" width="32">
+                                </a>
+                            </li>
+                        </ul>
+                    <p>
+                </div>
+                <!-- 自我簡介 -->
+                <!-- 專長技能 -->
+                <div class="profile_bottom">
+                    <p>
+                        目前是一個小小的助理程式師
+                        <br>對程式有種熱情，希望能夠寫出好看、使用者互動良好的網頁、APP，
+                        <br>也希望在後端能夠有一定的成就，慢慢邁進成為全端之神(?)
+                        <br>
+                        <br>擅長語言： JavaScript｜C#｜Asp.net
+                        <br>正在發展： React / React-Native｜AngularJS 2｜JAVA
+                        <br>常用ＤＢ： MSSQL｜MySQL
+                        <br>
+                        <br>E-mail：h6g2682@gmail.com
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>工作經驗</h2>
+            <h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1>
+        </section>
+
+    </div>
+
+    <script type="text/javascript" src="assets/js/slideMenu.js"></script>
+    <script type="text/javascript" src="assets/js/slideTag.js"></script>
 </body>
 </html>
