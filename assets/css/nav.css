@@ -62,7 +62,7 @@ nav#slide-menu > ul li.sep {
 nav#slide-menu > ul li.collection:before {
     content: '\f0a0';
 }
-nav#slide-menu > ul li.personal:before {
+nav#slide-menu > ul li.profile:before {
     content: '\eddb';
 }
 nav#slide-menu > ul li.experience:before {

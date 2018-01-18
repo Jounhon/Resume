@@ -156,6 +156,9 @@
         padding-bottom: 25px;
         width: 400px;
     }
+    section.profile .profile_head p{
+        width: auto;
+    }
     section.profile .profile_head .left {
         float: left;
     }
@@ -170,6 +173,9 @@
     }
     section.profile .profile_bottom p {
         margin-bottom: 25px;
+    }
+    section.profile .profile_bottom p .gray{
+        color: #C9D1D5;
     }
     section.profile .profile_awards {
         text-align: center;
@@ -301,7 +307,10 @@
         background-color: #89ABE3;
         color: #fff;
         margin-right: 10px;
-        padding: 4px 2px 4px 8px;
+        padding: 4px 8px 4px 8px;
+    }
+    .workspace02 li span.current {
+        background-color: #3BA99C;
     }
 
     /*
