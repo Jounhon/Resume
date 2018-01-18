@@ -31,7 +31,11 @@ nav#slide-menu > ul li {
     cursor: pointer;
     height: 30px;
 }
-nav#slide-menu > ul li:hover {
+nav#slide-menu > ul li > a{
+    color: #dfe5eb;
+}
+nav#slide-menu > ul li:hover,
+nav#slide-menu > ul li > a:hover {
     color: #59e9df;
 }
 nav#slide-menu > ul li:before {
