@@ -14,7 +14,8 @@
     <meta property="og:url" content="https://jounhon.github.io/Resume/"/>
     <!--出現在Facebook的圖片-->
     <meta property="og:image" content=""/>
-
+    <!-- ICON -->
+    <link rel="icon" href="assets/images/grass.ico" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" media="all" type="text/css" href="assets/css/common.css" />
     <link rel="stylesheet" media="all" type="text/css" href="assets/css/loading.css" />
@@ -46,8 +47,9 @@
     <script type="text/javascript">
         $(window).on("load",function () {
             setTimeout(function () {
-                $(".loadBox").delay(900).fadeOut(800);
-                $(".container, #slide-menu").fadeIn(800);
+                $(".loadBox").delay(900).fadeOut(800,function () {
+                    $(".container, #slide-menu").fadeIn(200);
+                });
             },900)
         })
     </script>
