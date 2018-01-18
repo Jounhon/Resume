@@ -18,7 +18,7 @@ img.zoom-img {
 }
 .zoom-overlay {
   z-index: 420;
-  background: #fff;
+  background: rgba(255,255,255,.6);
   position: fixed;
   top: 0;
   left: 0;
